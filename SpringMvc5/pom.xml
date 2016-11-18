@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <artifactId>SpringInActions</artifactId>
+        <groupId>com.spring</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>SpringMvc5</artifactId>
+    <packaging>war</packaging>
+    <name>SpringMvc5 Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <repositories>
+        <!--<repository>-->
+            <!--<id>spring-milestones</id>-->
+            <!--<name>Spring Milestones</name>-->
+            <!--<url>https://repo.spring.io/libs-milestone</url>-->
+            <!--<snapshots>false</snapshots>-->
+        <!--</repository>-->
+        <!--<repository>-->
+            <!--<id>spring-snapshots</id>-->
+            <!--<name>Spring Snapshots</name>-->
+            <!--<url>https://repo.spring.io/libs-snapshot</url>-->
+            <!--<snapshots>-->
+                <!--<enabled>true</enabled>-->
+            <!--</snapshots>-->
+        <!--</repository>-->
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.reactivestreams</groupId>
+            <artifactId>reactive-streams</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-core</artifactId>
+            <version>3.0.2.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>io.projectreactor.ipc</groupId>
+            <artifactId>reactor-netty</artifactId>
+            <version>0.5.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>8.5.4</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web-reactive</artifactId>-->
+            <!--<version>5.0.0.BUILD-SNAPSHOT</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+        <!--添加本地jar包-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web-reactive</artifactId>-->
+            <!--<version>5.0.0.BUILD-20161116.222628-35</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/spring-web-reactive-5.0.0.BUILD-20161116.222628-351.jar</systemPath>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web-reactive</artifactId>
+            <version>5.0.0.M3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/spring-web-reactive-5.0.0.M3.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-parent</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-parent</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-parent</artifactId>
+            <version>4.1.6.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.0.M3</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/spring-webmvc-5.0.0.M3.jar</systemPath>
+        </dependency>
+
+        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-web &ndash;&gt;-->
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring-web</artifactId>-->
+            <!--<version>5.0.0.M3</version>-->
+        <!--</dependency>-->
+
+    </dependencies>
+    <build>
+        <finalName>SpringMvc5</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
