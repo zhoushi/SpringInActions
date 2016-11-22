@@ -8,6 +8,9 @@
   <modules>
     <module>SpringMvc5</module>
       <module>SpringMybatis</module>
+      <module>SpringBean</module>
+      <module>DubboProvider</module>
+      <module>DubboConsumer</module>
   </modules>
   <packaging>pom</packaging>
 
