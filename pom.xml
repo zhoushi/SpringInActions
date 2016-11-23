@@ -11,6 +11,8 @@
       <module>SpringBean</module>
       <module>DubboProvider</module>
       <module>DubboConsumer</module>
+      <module>SpringMVC</module>
+      <module>SpringRabbit</module>
   </modules>
   <packaging>pom</packaging>
 
