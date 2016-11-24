@@ -20,6 +20,8 @@ public class ProducerMain {
   public static void main(String[] args) throws Exception {
     
     ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+
+    //得到teplate bean
     AmqpTemplate template = (AmqpTemplate) context.getBean("rabbitTemplate");
 
 
@@ -31,7 +33,8 @@ public class ProducerMain {
 //      Spittle spittle = new Spittle((long) i, null, "Hello world (" + i + ")", new Date());
       Demo demo = demoService.queryId(age);
       //上传消息
-      template.convertAndSend(demo);
+      template.convertAndSend("spittle.alert.exchange",
+              "spittle.alerts"+demo);
       Thread.sleep(5000);
     }
     

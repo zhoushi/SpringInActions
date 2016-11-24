@@ -8,7 +8,8 @@
   <!-- Import shared AMQP configuration -->
   <beans:import resource="amqp-shared.xml" />
 
-  <!--<start id="amqp_rabbitTemplate_with_routingKey"/>-->
+  <!--<start id="amqp_rabbitTemp
+  late_with_routingKey"/>-->
   <!--<template id="rabbitTemplate" -->
           <!--connection-factory="connectionFactory"-->
           <!--routing-key="spittle.alerts" />-->

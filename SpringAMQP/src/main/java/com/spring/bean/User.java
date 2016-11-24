@@ -1,14 +1,17 @@
-package com.spring.domain;
+package com.spring.bean;
+
+import java.io.Serializable;
 
 /**
  * Created by Administrator on 2016/11/24.
  */
-public class Demo implements java.io.Serializable{
+public class User implements Serializable {
 
     private String name;
+
     private Integer age;
 
-    public Demo(String name, Integer age) {
+    public User(String name, Integer age) {
         this.name = name;
         this.age = age;
     }
@@ -27,13 +30,5 @@ public class Demo implements java.io.Serializable{
 
     public void setAge(Integer age) {
         this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "Demo{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                '}';
     }
 }
