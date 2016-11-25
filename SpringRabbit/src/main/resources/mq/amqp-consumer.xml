@@ -15,6 +15,6 @@
               queues="spittleAlertQueue" />
     </listener-container>
 
-  <beans:bean id="spittleListener" class="com.spring.dao.DemoAlertHandler" />
+  <beans:bean id="spittleListener" class="com.dao.DemoAlertHandler" />
 
 </beans:beans>

@@ -50,7 +50,7 @@
 				  <!--queues="spittleAlertQueue" />-->
 	<!--</listener-container>-->
 
-	<!--<beans:bean id="spittleListener" class="com.spring.dao.DemoAlertHandler" />-->
+	<!--<beans:bean id="spittleListener" class="DemoAlertHandler" />-->
 	<!-- ======================================= -->
 	<!-- ALTERNATIVE CONFIGURATION OPTIONS BELOW -->
 	<!-- ======================================= -->

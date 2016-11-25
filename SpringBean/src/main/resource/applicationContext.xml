@@ -4,8 +4,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 
-    <!--<bean id="compactDisc" class="com.spring.Bean.SgtPeppers"/>-->
-    <!--<bean id="cdPlay" class="com.spring.Bean.CDPlay">-->
+    <!--<bean id="compactDisc" class="SgtPeppers"/>-->
+    <!--<bean id="cdPlay" class="CDPlay">-->
         <!--<constructor-arg ref="compactDisc"/>-->
     <!--</bean>-->
 </beans>
