@@ -13,6 +13,8 @@
       <module>DubboConsumer</module>
       <module>SpringMVC</module>
       <module>SpringRabbit</module>
+      <module>SpringRedis</module>
+    <module>SpringMVC4</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -44,13 +44,13 @@
 
 
 	<!-- 消息驱动的AMQP POJO-->
-	<listener-container connection-factory="connectionFactory" >
-		<listener ref="spittleListener"
-				  method="handleSpittleAlert"
-				  queues="spittleAlertQueue" />
-	</listener-container>
+	<!--<listener-container connection-factory="connectionFactory" >-->
+		<!--<listener ref="spittleListener"-->
+				  <!--method="handleSpittleAlert"-->
+				  <!--queues="spittleAlertQueue" />-->
+	<!--</listener-container>-->
 
-	<beans:bean id="spittleListener" class="com.spring.dao.DemoAlertHandler" />
+	<!--<beans:bean id="spittleListener" class="com.spring.dao.DemoAlertHandler" />-->
 	<!-- ======================================= -->
 	<!-- ALTERNATIVE CONFIGURATION OPTIONS BELOW -->
 	<!-- ======================================= -->
