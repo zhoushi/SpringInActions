@@ -18,6 +18,7 @@
       <module>SpringQuartz</module>
       <module>RPC</module>
     <module>SpringJMS</module>
+      <module>SpringRPC</module>
   </modules>
   <packaging>pom</packaging>
 
