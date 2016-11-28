@@ -1,9 +1,12 @@
 package com.consumer;
 
+import com.alibaba.fastjson.JSON;
 import com.dao.SpittleAlertHandler;
+import com.domain.Demo;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageProperties;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,9 +25,17 @@ public class ConsumerMain {
     //收到信息
     Message message =template.receive();
     System.out.println(message.toString());
-    MessageProperties demo = message.getMessageProperties();
+//    MessageProperties demo = message.getMessageProperties();
+    String newMessage = new String(message.getBody());
+
+    Demo demo = (Demo) JSON.parseObject(newMessage,Demo.class);
 
 
+    System.out.println(demo.toString());
+//    Demo demo1 = (Demo) template.getMessageConverter();
+    MessageConverter messageConverter = template.getMessageConverter();
+    System.out.println(message.toString());
+//    System.out.println(demo1.toString());
       ;
     //信息转换
 //      message.getBodyContentAsString();

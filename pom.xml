@@ -15,6 +15,9 @@
       <module>SpringRabbit</module>
       <module>SpringRedis</module>
     <module>SpringMVC4</module>
+      <module>SpringQuartz</module>
+      <module>RPC</module>
+    <module>SpringJMS</module>
   </modules>
   <packaging>pom</packaging>
 

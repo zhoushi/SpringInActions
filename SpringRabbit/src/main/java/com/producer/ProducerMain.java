@@ -1,6 +1,7 @@
 package com.producer;
 
 
+import com.alibaba.fastjson.JSON;
 import com.domain.Demo;
 import com.service.impl.DemoServiceImpl;
 import jdk.nashorn.internal.ir.annotations.Ignore;
@@ -26,9 +27,9 @@ public class ProducerMain {
 
 //      Spittle spittle = new Spittle((long) i, null, "Hello world (" + i + ")", new Date());
       Demo demo = demoService.queryId(age);
+      String sendMessage = JSON.toJSONString(demo);
       //上传消息
-      template.convertAndSend("spittle.alert.exchange",
-              "spittle.alerts"+demo);
+      template.convertAndSend(sendMessage);
       Thread.sleep(5000);
     }
     

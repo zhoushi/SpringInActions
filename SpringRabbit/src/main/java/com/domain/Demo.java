@@ -13,6 +13,9 @@ public class Demo implements java.io.Serializable{
         this.age = age;
     }
 
+    public Demo() {
+    }
+
     public String getName() {
         return name;
     }
@@ -31,7 +34,7 @@ public class Demo implements java.io.Serializable{
 
     @Override
     public String toString() {
-        return "Demo{" +
+        return "{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

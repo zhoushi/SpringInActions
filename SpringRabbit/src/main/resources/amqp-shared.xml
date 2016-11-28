@@ -31,15 +31,17 @@
 		</bindings>
 	</fanout-exchange>
 
+	<!--routing-key 路由的选择-->
 	<template id="rabbitTemplate"
 			  connection-factory="connectionFactory"
 			  exchange="spittle.alert.exchange"
-			  routing-key="spittle.alerts" />
-
+			  routing-key="spittle.alerts"/>
+	<!--队列的选择-->
+	<!--消费者中加上routing-key="spittle.alerts"则解析对象中会出现spittle.alerts头字符-->
 	<template id="rabbitTemplate2"
 			  connection-factory="connectionFactory"
 			  exchange="spittle.alert.exchange"
-			  routing-key="spittle.alerts"
+
 			  queue="spittle.alerts"/>
 
 
